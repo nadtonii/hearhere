@@ -4,113 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - HearHere</title>
-    <meta name="description" content="Built by podcast enthusiasts, for podcast enthusiasts. Learn about HearHere's mission and vision.">
+    <meta name="description" content="HearHere started with a question: why do podcast apps feel cluttered, slow, or missing key features?">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
+    <header>
+        <div class="container">
             <a href="index.html" class="logo">HearHere</a>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="features.html">Features</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="beta.html" class="beta-link">Join Beta</a></li>
-            </ul>
+            <nav>
+                <a href="features.html">Features</a>
+                <a href="beta.html">Beta</a>
+                <a href="about.html">About</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="section">
+    <main>
         <div class="container">
-            <div class="section-header">
-                <h1>Built by podcast enthusiasts, for podcast enthusiasts</h1>
-            </div>
+            <section class="page-header">
+                <h1>About</h1>
+            </section>
+
+            <section class="philosophy">
+                <p>HearHere started with a question: why do podcast apps feel cluttered, slow, or missing key features?</p>
+
+                <p>Every feature exists because it matters. The smart caching that makes the app fast. The download manager that works reliably. The sleep timer that fades gently. The chapter support for structured shows.</p>
+
+                <p>HearHere is built on the <a href="https://podcastindex.org">PodcastIndex.org</a> API, supporting independent podcasting.</p>
+
+                <p>Currently in beta via TestFlight. App Store launch coming soon.</p>
+            </section>
+
+            <hr>
+
+            <section class="contact">
+                <h2 style="margin-top: 0;">Contact</h2>
+                <p>Beta feedback: <a href="mailto:beta@hearhere.app">beta@hearhere.app</a></p>
+                <p>General inquiries: <a href="mailto:hello@hearhere.app">hello@hearhere.app</a></p>
+            </section>
         </div>
-    </section>
+    </main>
 
-    <!-- Main Content -->
-    <section class="section">
-        <div class="container" style="max-width: 800px;">
-            <p style="font-size: 1.25rem; line-height: 1.8;">
-                HearHere started with a simple question: why do so many podcast apps feel cluttered, slow, or missing key features? We set out to build the app we wanted to use—fast, beautiful, and packed with the features that actually matter.
-            </p>
-
-            <p style="font-size: 1.25rem; line-height: 1.8;">
-                Every feature in HearHere exists because we use it ourselves. The smart caching system that makes the app blazingly fast. The download manager that handles offline listening perfectly. The sleep timer that fades out gently. The chapter support for structured shows. We obsessed over these details because they transform good listening into great listening.
-            </p>
-
-            <p style="font-size: 1.25rem; line-height: 1.8;">
-                HearHere is built on open standards using the <a href="https://podcastindex.org" target="_blank" rel="noopener noreferrer">PodcastIndex.org</a> API, supporting the independent podcast ecosystem. We believe in podcasting's open nature and we're committed to keeping HearHere free, fast, and focused on what matters: your listening experience.
-            </p>
-        </div>
-    </section>
-
-    <!-- Current Status -->
-    <section class="section">
-        <div class="container">
-            <div class="beta-status" style="max-width: 800px; margin: 0 auto;">
-                <h3 style="margin-bottom: 1rem;">Current Status</h3>
-                <p style="margin: 0;">
-                    HearHere is currently in beta testing via TestFlight. We're gathering feedback from early users, fixing bugs, and adding polish before our official App Store launch. Want to be part of the journey? <a href="beta.html">Join our beta program</a>.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Statement -->
-    <section class="section">
-        <div class="container" style="max-width: 800px; text-align: center;">
-            <h2 class="mb-2">Our Mission</h2>
-            <p style="font-size: 1.25rem; line-height: 1.8;">
-                Make listening to podcasts effortless and enjoyable. No bloat, no distractions—just the features you need wrapped in a design you'll love.
-            </p>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <div class="container">
-        <section class="beta-callout">
-            <h2>Join us on this journey</h2>
-            <p>Be part of building the best podcast app. Join our TestFlight beta today.</p>
-            <a href="beta.html" class="btn btn-primary">Request Beta Access</a>
-        </section>
-    </div>
-
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <h4>Product</h4>
-                <ul>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="how-it-works.html">How It Works</a></li>
-                    <li><a href="beta.html">Join Beta</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+        <div class="container">
+            <div class="footer-logo">HearHere</div>
+            <div class="footer-links">
+                <a href="features.html">Features</a>
+                <a href="beta.html">Beta</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
             </div>
-            <div class="footer-column">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="mailto:beta@hearhere.app">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
+            <div class="footer-meta">
+                <a href="#">Privacy</a>
+                <span>•</span>
+                <a href="#">Terms</a>
+                <span>•</span>
+                <a href="mailto:beta@hearhere.app">Contact</a>
             </div>
-            <div class="footer-column">
-                <h4>Connect</h4>
-                <ul>
-                    <li><a href="mailto:beta@hearhere.app">beta@hearhere.app</a></li>
-                    <li><a href="#">TestFlight Status</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2026 HearHere &bull; Currently in Beta &bull; Made for podcast lovers
+            <div class="footer-meta">Currently in Beta • beta@hearhere.app</div>
+            <div class="footer-copyright">© 2026 HearHere</div>
         </div>
     </footer>
 
