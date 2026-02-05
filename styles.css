@@ -196,6 +196,11 @@ header {
     margin: 0;
 }
 
+.body-text-gray strong {
+    color: #000000;
+    font-weight: 600;
+}
+
 .body-text-black {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -254,6 +259,11 @@ header {
     letter-spacing: -0.012em;
     color: rgba(235, 235, 245, 0.6);
     margin: 0;
+}
+
+.features-body strong {
+    color: #FFFFFF;
+    font-weight: 600;
 }
 
 .features-image {
