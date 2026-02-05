@@ -93,6 +93,7 @@ header {
     gap: 32px;
     width: 100%;
     max-width: 456px;
+    text-align: left;
 }
 
 .hero-paragraph {
@@ -104,6 +105,8 @@ header {
     letter-spacing: -0.012em;
     color: rgba(60, 60, 67, 0.6);
     margin: 0;
+    text-align: left;
+    width: 100%;
 }
 
 .hero-paragraph strong {
@@ -135,8 +138,13 @@ header {
     max-width: 758px;
 }
 
-.privacy-item.reverse {
-    flex-direction: row-reverse;
+/* Desktop layouts */
+.privacy-item.image-left {
+    flex-direction: row; /* Image first, text second */
+}
+
+.privacy-item.text-left {
+    flex-direction: row; /* Text first, image second - matches HTML order */
 }
 
 .privacy-image {
@@ -391,11 +399,21 @@ header {
     }
 
     .privacy-item,
-    .privacy-item.reverse {
+    .privacy-item.image-left,
+    .privacy-item.text-left {
         flex-direction: column;
         gap: 32px;
         max-width: 100%;
         align-items: center;
+    }
+
+    /* Always show text first on mobile */
+    .privacy-item .privacy-text {
+        order: 1;
+    }
+
+    .privacy-item .privacy-image {
+        order: 2;
     }
 
     .privacy-image {
